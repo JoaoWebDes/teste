@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap'); /* Para usar em descrições em textos que tem mais conteúdo, usar font-family: 'Roboto', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap'); /* Para titulos e Frases unicas colocar font-family: 'Roboto', sans-serif; */
+
+:root{
+  --cp-e1: #341150;
+  --cp-e2: #52098b;
+  --ch1: #3c165b;
+}
+body{
+  background-color: rgba(60, 22, 91, 36);
+  color: rgb(0, 0, 0);
+  font-family: 'Roboto', sans-serif;
+  margin: 0px;
+}
+
+ul, p, h1, h2,h3{
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+img{
+  display: block;
+  max-width: 100%;
+}
+
+
+.material-symbols-outlined{
+  color: #fff;
+  background-color: var(--cp-e2);
+  border-radius: 50%;
+  padding: 20px;
+  font-variation-settings:
+    'FILL' 0,
+    'wght' 5000,
+    'GRAD' 10,
+    'opsz' 0;
+}
+
+.chat-container{
+  max-width: 1700px;
+  margin: 0 auto;
+  padding-top: 140px;
+  display: flex;
+  gap: 80px;
+}
+
+.chat-icons{
+  background-color: var(--cp-e1);
+  box-shadow: 10px 10px 0 0;
+  max-width: 200px;
+  display: flex;
+  gap: 15px;
+  padding: 40px;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 30px;
+}
+
+.chat-icons li{
+  background-color: var(--cp-e2);
+}
+
+.chat-icons li:last-child{
+  background: none;
+}
+
+[placeholder]{
+  padding: 20px;
+  width: 300px;
+  border-radius: 100px;
+}
+
+.users{
+  background-color: var(--cp-e1);
+  border-radius: 50px;
+  gap: 20px;
+  padding: 160px 20px;
+  display: grid;
+  box-shadow: 12px 12px 0 0;
+  position: relative;
+}
+
+.users-input{
+display: grid;
+position: absolute;
+left: 30px;
+top: 20px;
+grid-template-columns: 1fr auto
+}
+
+.users ul{
+  display: flex;
+  padding-top: 0px;
+  flex-direction: column;
+  gap: 20px;
+  color: #fff;
+}
+
+.users li{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  background-color: var(--ch1);
+  border-radius: 80px;
+  padding: 10px 0px;
+  cursor: pointer;
+  box-sizing: border-box;
+  position: relative;
+}
+.users li:hover{
+  background-color: var(--cp-e2);
+}
+
+.users h2{
+  display: inline-block;
+  grid-column: 2;
+  justify-self: start;
+  padding-left: 40px;
+  padding-bottom: 20px;
+  font-weight: 600;
+}
+
+.users h2::after{
+  content: "Olá, qual a ideia id...";
+  display: block;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #d9d9d9;
+  position: absolute;
+} 
+
+.users p{
+  grid-column: -1/2;
+  justify-self: center;
+}
+
+.users img{
+  width: 80px;
+  padding-left: 40px;
+}
+
+.users li i{
+  grid-column: 3;
+  margin-right: 20px;
+}
+
+.users li:hover{
+  background-color: var(--);
+}
+
+.talking-bg{
+  background: linear-gradient(#52098b 10%, #fff 0 88%, #52098b 0 10%);
+  box-shadow: 20px -5px 0px 15px;
+  width: 800px;
+  padding: 80px 80px;
+  position: relative;
+  border-radius: 80px;
+}
+
+.talking{
+  display: grid;
+  justify-content: center;
+}
+
+.talking img{
+  width: 60px;
+  justify-self: center;
+  margin-bottom: 20px;
+}
+
+.talking h3::after{
+  content: "";
+  display: block;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #d9d9d9;
+  margin-top: 20px;
+}
+
+.talking input{
+  width: 70%;
+  position: absolute;
+  bottom: 20px;
+  left: 80px;
+}
+
+.talking-ms .material-symbols-outlined{
+  position: absolute;
+  right: 80px;
+  bottom: 20px;
+  background-color: #6c11b4;
+}

@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Avaliação - Dê match em uma ideia!</title>
+    <link rel="stylesheet" href="../css/estiloav.css">
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="..js/av.js">
+
+</head>
+
+
+  <body>
+            <script>let slideIndex = 1;
+              showSlides(slideIndex);
+              
+              // Next/previous controls
+              function plusSlides(n) {
+                showSlides(slideIndex += n);
+              }
+              
+              // Thumbnail image controls
+              function currentSlide(n) {
+                showSlides(slideIndex = n);
+              }
+              
+              function showSlides(n) {
+                let i;
+                let slides = document.getElementsByClassName("mySlides");
+                if (n > slides.length) {slideIndex = 1}
+                if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";
+                }
+       
+                slides[slideIndex-1].style.display = "block";
+                dots[slideIndex-1].className += " active";
+              }
+              </script>
+      
+    <header> 
+ 
+    <div class="id"><img class="img" src="../img/logo.png"><p class="subt"> ID AUTOR </p> 
+   
+        <p class="dh">DATA/HORA</p>
+        <b><p class="titleav">NOME DO PROJETO</p><b>
+    
+          <p class="av">3,5</p>
+          <p class="av2">200 avaliações</p>
+       <center> <button class="ok">OK</button>
+        <button class="no">X</button></center>
+
+        <ul class="avaliacao">
+          <li class="star-icon ativo" data-avaliacao="1"></li>
+          <li class="star-icon      " data-avaliacao="2"></li>
+          <li class="star-icon      " data-avaliacao="3"></li>
+          <li class="star-icon      " data-avaliacao="4"></li>
+          <li class="star-icon      " data-avaliacao="5"></li> </ul>
+
+          <script>
+            var stars = document.querySelectorAll('.star-icon');
+            document.addEventListener('click',function(e){
+                var classStar = e.target.classList;
+                if(!classStar.contains('ativo')){
+                    stars.forEach(function(star){
+                        star.classList.remove('ativo');
+                    });
+                        classStar.add('ativo');
+                    console.log(e.target.getAttribute('data-avaliacao'));
+                  }});
+                  </script>
+                  <script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}</script>
+             <div class="slideshow-container">
+
+              <div class="mySlides fade">
+               
+                <img class="imgs" src="https://images.pexels.com/photos/3913025/pexels-photo-3913025.jpeg?auto=compress&cs=tinysrgb&w=1600">
+              </div>
+            
+              <div class="mySlides fade">
+                
+                <img class="imgs" src="https://images.pexels.com/photos/2007647/pexels-photo-2007647.jpeg?auto=compress&cs=tinysrgb&w=1600">
+              </div>
+            
+              <div class="mySlides fade">
+              
+                <img class="imgs" src="https://images.pexels.com/photos/1309766/pexels-photo-1309766.jpeg?auto=compress&cs=tinysrgb&w=1600">
+              </div>
+            
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+    
+            </div>
+
+
+
+      </header>
+
+    
+</body>
+
+</html>

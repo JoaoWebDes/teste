@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap'); /* Para titulos e Frases unicas colocar font-family: 'Roboto', sans-serif; */
+
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #3c165b;
+}
+.tb {
+    color: white;
+    background-color: #341150;
+    width: 1300px;
+    height: 590px;
+    margin: auto;
+    margin-top: 200px;
+    border-radius: 50px;
+}
+.in {
+    font-style: italic;
+}
+h4 {
+    display: inline;
+}
+.text1 {
+    color: rgba(255, 255, 255, 0.89);
+}
+.text {
+    font-size: 20px;
+    margin-left: 50px;
+    margin-top: auto;
+}
+.t2 {
+    margin-left: 305px;
+}
+.t1{
+    margin-left: 250px;
+}
+
+.t3{
+    margin-left: 183px;
+}
+
+.t4{
+    margin-left: 297px;
+}
+.ig {
+    position: absolute;
+    margin-left: 250px;
+    margin-top: -15px;
+}
+
+.ig1 {
+    position: absolute;
+    margin-left: 480px;
+    margin-top: -20px;
+}
+.ig2 {
+    margin-left: 600px;
+}
+hr {
+    margin-top: 30px;
+    width: 1200px;
+    height: 3px;
+    background-color: white;
+    
+}
